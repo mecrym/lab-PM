@@ -1,0 +1,41 @@
+<diagram program="umletino" version="15.1"><zoom_level>5</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>5</x><y>125</y><w>105</w><h>40</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Estado
+--
+* TRANSITO
+* MANUTENÇÃO</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>160</x><y>125</y><w>105</w><h>95</h></coordinates><panel_attributes>Veiculo
+--
+-placa: String
+-modelo: String
+-quilometragem(km): float
+-ano: int
+
+--
+#Operation(i: int): int
+/+AbstractOperation()/
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>325</x><y>125</y><w>105</w><h>95</h></coordinates><panel_attributes>Manutencao
+--
+-previsao: LocalDate</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>325</x><y>260</y><w>105</w><h>60</h></coordinates><panel_attributes>Oficina
+--
+nome: String
+endereco: String
+--
+#Operation(i: int): int
+/+AbstractOperation()/
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>160</x><y>295</y><w>105</w><h>95</h></coordinates><panel_attributes>Motorista
+--
+-numero_de_identificacao: int
+- nome: String
+-veiculos: int
+--
+Responsibilities
+-- Resp1
+*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>100</x><y>145</y><w>70</w><h>15</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>120;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>160</y><w>75</w><h>20</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1</panel_attributes><additional_attributes>10;10;130;10</additional_attributes></element><element><id>Relation</id><coordinates><x>370</x><y>215</y><w>20</w><h>55</h></coordinates><panel_attributes>lt=-
+m1=*
+m2=1</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>205</x><y>215</y><w>20</w><h>90</h></coordinates><panel_attributes>lt=-
+m1=*
+m2=*</panel_attributes><additional_attributes>10;10;10;160</additional_attributes></element></diagram>

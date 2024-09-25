@@ -1,4 +1,5 @@
-package business;
+package br.lpm.business;
+
 
 import java.time.LocalDate;
 
@@ -28,7 +29,7 @@ public class Pessoa {
     for (int i = 0; i < nome.length(); i++) {
       char c = nome.charAt(i);
       if (!((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || c == ' ')) {
-        nomeValido = false;
+        nomeValido = true;
         break;
       }
     }
